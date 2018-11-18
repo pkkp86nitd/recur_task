@@ -1,0 +1,37 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    recur_Task
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+   
+  
+<ion-content padding>
+   
+    <button ion-button full (click)="getServerData()">GET RANKINGS </button>
+    <ion-card>
+        <ion-card-content  class="box" *ngFor="let item of Contestid,let i=index ">
+   <div>
+     <p>    <span class="contestid"> Contest Id : </span > <span class="bold" innerHTML={{Contestid[i]}} > </span> </p>
+     <p>    <span class="contestname contestid "> Contestname: </span> <span innerHTML={{Contestname[i]}} > </span> </p>
+     <p>    <span class="handle contestid">      Handle: </span> <span innerHTML={{Handle[i]}} > </span>   </p>
+     <p>    <span class="rank contestid">       Rank : </span> <span innerHTML={{Rank[i]}} > </span>   </p>
+     <p>    <span  class="contestid">  Newrating     : </span> <span innerHTML={{Newrating[i]}} > </span>   </p>
+     <p>    <span  class="contestid">  Oldrating     : </span> <span innerHTML={{Oldrating[i]}} > </span>   </p>
+    </div>
+      </ion-card-content>   
+       </ion-card>  
+       <button ion-button full  >NEXT </button>
+       
+</ion-content>
+
+     
+
+
+
+
+
